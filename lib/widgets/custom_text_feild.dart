@@ -8,18 +8,15 @@ class CustomTextFeild extends StatelessWidget {
   final String hint;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
-      child: TextField(
-        cursorColor: kPrimaryColor,
-        decoration: InputDecoration(
-            focusedBorder: buildBorder(kPrimaryColor),
-            enabledBorder: buildBorder(),
-            border: buildBorder(),
-            hintText: hint,
-            hintStyle: const TextStyle(color: kPrimaryColor, fontSize: 20),
-            contentPadding: contentPadding),
-      ),
+    return TextField(
+      cursorColor: kPrimaryColor,
+      decoration: InputDecoration(
+          focusedBorder: buildBorder(kPrimaryColor),
+          enabledBorder: buildBorder(),
+          border: buildBorder(),
+          hintText: hint,
+          hintStyle: const TextStyle(color: kPrimaryColor, fontSize: 20),
+          contentPadding: contentPadding),
     );
   }
 
